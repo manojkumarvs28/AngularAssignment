@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  username ='';
+  showSecret=false;
+  log=[];
+
+  handleButtonClick():void {
+    this.showSecret=!this.showSecret;
+    this.log.push(new Date());
+  }
+
 }
